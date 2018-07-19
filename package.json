@@ -1,0 +1,21 @@
+{
+  "name": "mytaxi",
+  "version": "1.0.0",
+  "description": "Automate my taxi demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abu-zara/myTaxiTakeHome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abu-zara/myTaxiTakeHome/issues"
+  },
+  "homepage": "https://github.com/abu-zara/myTaxiTakeHome#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
