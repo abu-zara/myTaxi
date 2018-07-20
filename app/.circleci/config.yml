@@ -1,9 +1,13 @@
-version: 1
+version: 2
 jobs:
   build:
     working_directory: ~/tmp
     docker:
       -image: circleci/node:7
+    dependencies:
+      override:
+        - chmod +x gradlew
+        - ./gradlew dependencies
     steps:
       -checkout
       - run: npm install
