@@ -7,6 +7,9 @@ jobs:
     dependencies:
       post:
         - rm -r ~/.gradle
+    auth:
+              username: abu-zara
+              password: ismail_sarumi1
      command: |
            sudo chmod +x gradlew
           ./gradlew androidDependencies
