@@ -9,7 +9,7 @@ machine:
 dependencies:
   override:
       -echo y | android update sdk
-      - Ismail\Desktop\Andriod_Automation\Mytaxi ./gradlew dependencies
+      - Ismail\Desktop\myTaxiTakeHome\Mytaxi ./gradlew dependencies
 
 test:
   override:
