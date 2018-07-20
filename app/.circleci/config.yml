@@ -7,9 +7,9 @@ jobs:
     dependencies:
       post:
         - rm -r ~/.gradle
-      override:
-        - chmod +x gradlew
-        - ./gradlew dependencies
+     command: |
+           sudo chmod +x gradlew
+          ./gradlew androidDependencies
     steps:
       -checkout
       - run: npm install
