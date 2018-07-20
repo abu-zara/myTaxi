@@ -7,13 +7,7 @@ jobs:
     dependencies:
       post:
         - rm -r ~/.gradle
-    auth:
-              username: abu-zara
-              password: ismail_sarumi1
-     command: |
-           sudo chmod +x gradlew
-          ./gradlew androidDependencies
     steps:
-      -checkout
+      - checkout
       - run: npm install
-      - run: npm test
+      - run: test
