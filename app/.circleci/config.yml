@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
+    before_install:
+      - yes | sdkmanager "platforms;android-27"
           name: Greeting
           command: echo Hello, world.
       - run:
