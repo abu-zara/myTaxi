@@ -13,6 +13,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.typeText;
@@ -60,6 +61,12 @@ public class AuthenticationActivityInstrumentedTest {
 
         // Check that the textSearch field is present.
         //onView(withText(endsWith("mytaxi demo"))).check(matches(isDisplayed()));
+        //onView(withText("Sarah Scott")).inRoot(RooMatchers.isPlatformPopup()).perform(click);
+           /* onView(withText("Sarah Scott")).check(matches(isDisplayed()));
+            onData(withText("Sarah Scott")).inAdapterView(withText("Sarah Scott"))
+                    .perform(click());
+            onView(withText("Sarah Scott")).check(matches(withText("Sarah Scott")))
+                    .check(matches(isDisplayed())); */
     }
 
 

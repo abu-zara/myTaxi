@@ -1,18 +1,13 @@
-genral:
-  artifacts:
-      -/home/windows/mytaxi/app/build/outputs/apk/
-
-machine:
-  environment:
-      Ismail\Desktop\Andriod_Automation\Mytaxi
-
-dependencies:
-  override:
-      -echo y | android update sdk
-      - Ismail\Desktop\myTaxiTakeHome\Mytaxi ./gradlew dependencies
-
-test:
-  override:
-      - (./gradlew assemble):
-          timeout:360
-
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
